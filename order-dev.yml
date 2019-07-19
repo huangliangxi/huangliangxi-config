@@ -1,3 +1,13 @@
+eureka:
+  instance:
+    preferIpAddress: true  #显示IP
+   # instance-id: ${spring.cloud.client.ipAddress}:${server.port}   #客户端实例名称,这是以IP显示方便区分
+  client:
+    service-url:
+      defaultZone: http://192.168.0.198:8761/eureka #把服务注册到eureka注册中心
+
+
+
 name: order1111111111111
 env: dev
 
